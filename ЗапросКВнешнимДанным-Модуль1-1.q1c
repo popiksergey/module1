@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<querylist>
+	<query name="dbo_Tarifi">
+		<text>ВЫБРАТЬ
+	dbo_Tarifi.NameTarif,
+	СУММА(dbo_Tarifi.AbonPlata) КАК AbonPlata
+ИЗ
+	ВнешнийИсточникДанных.ВнешнийИсточникДанных1.Таблица.dbo_Tarifi КАК dbo_Tarifi
+
+СГРУППИРОВАТЬ ПО
+	dbo_Tarifi.NameTarif
+</text>
+	</query>
+</querylist>
